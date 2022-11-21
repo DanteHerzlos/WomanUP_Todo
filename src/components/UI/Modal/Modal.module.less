@@ -1,0 +1,37 @@
+@import url("/src/variables.less");
+
+.modalContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  position: relative;
+  max-width: 600px;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  background-color: @color-1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: @color-10;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.closeBtn:hover{
+  color: @color-11;
+
+}

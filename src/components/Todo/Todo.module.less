@@ -1,0 +1,55 @@
+@import url("/src/variables.less");
+
+.todo {
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: @color-4;
+  color: @color-9;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  transition: 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+.todo:hover {
+  background-color: @color-5;
+}
+
+.checkbox {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.date {
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.date.disable {
+  text-decoration: line-through;
+}
+
+.delBtn {
+  cursor: pointer;
+  margin-left: 1rem;
+  line-height: 0;
+  font-size: 2.5rem;
+  color: @color-10;
+  transition: 0.3s;
+}
+
+.delBtn:hover {
+  color: @color-11;
+}
+
+.todo.disable {
+  background-color: @color-12;
+}
+
+.todo.disable:hover {
+  background-color: @color-13;
+}
